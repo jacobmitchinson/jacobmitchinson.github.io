@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Jacob Mitchinson's Blog]]></title>
+  <title><![CDATA[Jacob Mitchinson]]></title>
   <link href="http://jacobmitchinson.github.io/atom.xml" rel="self"/>
   <link href="http://jacobmitchinson.github.io/"/>
-  <updated>2014-12-12T23:46:46+00:00</updated>
+  <updated>2014-12-12T23:47:17+00:00</updated>
   <id>http://jacobmitchinson.github.io/</id>
   <author>
     <name><![CDATA[Jacob Mitchinson]]></name>
