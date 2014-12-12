@@ -4,12 +4,21 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://jacobmitchinson.github.io/atom.xml" rel="self"/>
   <link href="http://jacobmitchinson.github.io/"/>
-  <updated>2014-12-12T23:39:34+00:00</updated>
+  <updated>2014-12-12T23:45:10+00:00</updated>
   <id>http://jacobmitchinson.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
   </author>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://jacobmitchinson.github.io/blog/2014/12/12/test/"/>
+    <updated>2014-12-12T23:44:26+00:00</updated>
+    <id>http://jacobmitchinson.github.io/blog/2014/12/12/test</id>
+    <content type="html"><![CDATA[<p>Test post</p>
+]]></content>
+  </entry>
   
 </feed>
