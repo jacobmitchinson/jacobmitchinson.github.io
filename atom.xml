@@ -4,7 +4,7 @@
   <title><![CDATA[Jacob Mitchinson]]></title>
   <link href="http://jacobmitchinson.github.io/atom.xml" rel="self"/>
   <link href="http://jacobmitchinson.github.io/"/>
-  <updated>2014-12-13T11:15:10+00:00</updated>
+  <updated>2014-12-13T11:17:52+00:00</updated>
   <id>http://jacobmitchinson.github.io/</id>
   <author>
     <name><![CDATA[Jacob Mitchinson]]></name>
@@ -17,7 +17,7 @@
     <link href="http://jacobmitchinson.github.io/blog/2014/12/13/makers-academy-pre-course-week-one/"/>
     <updated>2014-12-13T10:39:46+00:00</updated>
     <id>http://jacobmitchinson.github.io/blog/2014/12/13/makers-academy-pre-course-week-one</id>
-    <content type="html"><![CDATA[<p>I began the Makers Academy today which is a 12 week intensive course, focusing on Ruby, Rails, HTML, CSS, and Javascript. This blog is intended to track my progress through the course and to help others that might be trying to learn. I’ve been bringing myself up to speed over the last few months using a number of different resources. The most useful ones are listed below with a brief review:</p>
+    <content type="html"><![CDATA[<p>I began the Makers Academy today which is a 12 week intensive course, which teaches Ruby, Javascript, Node, Rails, HTML, CSS, TDD, OOP and more. This blog is intended to track my progress through the course and to help others that might be trying to learn. I’ve been bringing myself up to speed over the last few months using a number of different resources. The most useful ones are listed below with a brief review:</p>
 
 <p>Books:</p>
 
