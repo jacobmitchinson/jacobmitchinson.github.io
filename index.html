@@ -53,6 +53,331 @@
 	<header>
 		<h2 class="title">
 			
+			<a href="/blog/2014/12/13/makers-academy-pre-course-week-one/">
+			
+				Maker&#8217;s Academy Pre-course Week One</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-13T10:39:46+00:00" pubdate data-updated="true"></time></div>
+	</header>
+	<div class="entry-content">
+		<h1>Maker&rsquo;s Academy Pre-Course Week One</h1>
+
+<p>I began the Makers Academy today which is a 12 week intensive course, focusing on Ruby, Rails, HTML, CSS, and Javascript. This blog is intended to track my progress through the course and to help others that might be trying to learn. I’ve been bringing myself up to speed over the last few months using a number of different resources. The most useful ones are listed below with a brief review:</p>
+
+<p>Books:</p>
+
+<p><strong>Beginning Ruby | Good book but OOP explanations took me a few reads to understand.</strong></p>
+
+<p><strong>The Well Grounded Rubyist | This has a better explanation of some ruby concepts, particularly OOP.</strong></p>
+
+<p>Online:</p>
+
+<p><a href="http://learnrubythehardway.org">http://learnrubythehardway.org</a> &amp; learn cli hard way | This was by far the best resource I used for learning the basics of coding. It is not necessarily the best ruby resource, but it is fantastic for teaching you the mindset needed to learn to code. Principally this is because the resource forces you to ask why your code works. If you can forgive the occasionally condescending tone of the author then this is the best place to start.</p>
+
+<p><a href="https://pine.fm/LearnToProgram">https://pine.fm/LearnToProgram</a> | Chris Pine probably does a better job at explaining Ruby than the above and the exercises are excellent.</p>
+
+<p><a href="http://rubymonk.com">http://rubymonk.com</a> | From the creator of ruby comes Ruby Monk. It’s a good resource but I found the explanations a little bit difficult to understand at times. Perhaps that’s just me.</p>
+
+<p><a href="http://www.theodinproject.com">http://www.theodinproject.com</a> | The Odin Project is a free and open source course that, as it claims, will enable you to become a Web Developer using entirely free resources. Its creator is now running the paid for bootcamp Viking Code School. The resources it uses are good and the ruby exercises rapidly improved my understanding of OOP. I would also highly recommend doing the Web Development 101 part of the course.</p>
+
+<p><a href="http://codeacademy.com">http://codeacademy.com</a> - Ruby, HTML, CSS, Javascript tracks | Codeacademy is superb for immediately immersing you in each language. However, its explanations are sometimes frustratingly lightweight and it doesn’t encourage you to branch out from the core materials.</p>
+
+<p><a href="http://www.ee.surrey.ac.uk/Teaching/Unix">http://www.ee.surrey.ac.uk/Teaching/Unix</a> | Great unix resource.</p>
+
+<p><a href="http://gitimmersion.com">http://gitimmersion.com</a> | Great git resource with excellent explanations</p>
+
+<p>Things I hated (perhaps just me):</p>
+
+<p><a href="https://www.codeschool.com">https://www.codeschool.com</a> | I did not like the video format at all and I found the explanations unintuitive.</p>
+
+<p>A quick note: I’ve found that sometimes I’d have to read multiple resources on a similar subject matter in order to appreciate the ins and outs.</p>
+
+<p>Finally, remember this: do not try and understand all of computer science all at once. No seriously, you could potentially spend hours trawling through Wikipedia to understand certain concepts but without understanding the basics you aren’t going to get anywhere. I learnt this the hard way.</p>
+
+<p>Making Life Easier</p>
+
+<p>I consider myself to be quite a patient person, but I’ve also found that sometimes I’ve wanted to throw my computer out the window whilst doing some of these exercises. Seriously, I cannot express enough the importance of taking regular breaks whilst coding. I use the Pomodoro technique to help enforce this using a 50 minute work / 10 minute break cycle. Trust me, it’ll save you time and keep you fresh throughout the day. I like this iPhone app.</p>
+
+<p>Another app I’ve used is &lsquo;Stop, Breathe &amp; Think&rsquo; - a meditation app. The short meditations work well with my Pomodoro timings. If you give it a try, you’ll never go back.</p>
+
+<p>Sometimes when learning a new skill you immerse yourself in the task so much that it’s easy to forget about the rest of the world. An app that I’ve used for a little while now, Omnifocus, has saved my bacon more times than I can remember (Omnifocus probably knows though). It uses the Getting Things Done system and will help you to complete projects from ‘make a wizard chess game in ruby’ to harder tasks such as ‘load dishwasher’.</p>
+
+<p>I’m also an avid user of Pocket. It’ll help you get back to resources you use. Just remember to tag the things you like. I also use an IFTTT to send interesting articles to this Tumblr.</p>
+
+<p>Makers Week One</p>
+
+<p>Below I have included my explanations for some useful commands that I learnt this week whilst doing the Makers pre-course week one. I like to explain the commands to myself in a concise format. I find that this aids my memory and understanding whilst also providing a handy reference for things I’ve learnt. Further, whilst the below is mostly made up of things I have learnt from the Makers resource, I often find that I use multiple resources to aid my understanding. When I want to look something up quickly, I don’t want to have to remember precisely where I found it.</p>
+
+<p>Command Line</p>
+
+<blockquote><p>rm -f</p></blockquote>
+
+<p>This forces the removal of a file even if it is write protected.</p>
+
+<blockquote><p>rm -i</p></blockquote>
+
+<p>This provides an interactive screen for deleting files. Especially useful if you are deleting a lot of files.</p>
+
+<blockquote><p>cat</p></blockquote>
+
+<p>This concatenates a file which means that it combines files.</p>
+
+<pre><code> &gt; cat jenkins.txt
+</code></pre>
+
+<p>Print the contents to the screen.</p>
+
+<blockquote><p>cat > cat.txt</p></blockquote>
+
+<p>This will allow you to edit a file.</p>
+
+<blockquote><p>cat someText anotherText > combined</p></blockquote>
+
+<p>This will merge two files and provide you with a “combined” text file.</p>
+
+<blockquote><p>less longText</p></blockquote>
+
+<p>Displays the text. ‘q’ to quit ;)</p>
+
+<blockquote><p>head -3 longText</p></blockquote>
+
+<p>Displays the first lines within the console. It defaults to 10 but here we specify 3.</p>
+
+<p>Don’t make this mistake and bash your ‘hed’:</p>
+
+<p>image</p>
+
+<blockquote><p>tail -3 longText</p></blockquote>
+
+<p>Tail works in a similar way to head but displays the last lines.</p>
+
+<p>SUPER USEFUL = tail -f log</p>
+
+<p>This command is insanely useful. It allows you to see what is happening with logs (and other messages) on the fly. tail -f /private/var/log/system.log is useful on Macs.</p>
+
+<blockquote><p>man</p></blockquote>
+
+<p>RTFM</p>
+
+<p>Streams</p>
+
+<p>Streams are channels that connect to inputs and outputs. Your keyboard is an input stream and your screen is an output stream. Usually there is an error stream.</p>
+
+<p>These are usually abbreviated as STDIN (stream in),  STDOUT (stream out), and STDERR.</p>
+
+<p>This is valuable to know because streams can be connected in different ways. Thus:</p>
+
+<p>cat combined.txt | less</p>
+
+<p>Enables us to send the output on the left to less (as earlier) using what is known as a pipe or “|”, Mario style.</p>
+
+<p>This is known as redirection.</p>
+
+<p>Last tip on redirection. The greater than sign will write the output from the input on the left to the input on the right. That’s how we concatenated the following:</p>
+
+<blockquote><p>cat someText anotherText > new</p></blockquote>
+
+<p>Finding and listing files</p>
+
+<p>If you are only working with a few files then using > ls is quite handy. However, if you are working with 6,000 files then you are probably going to need to narrow down what you are listing on the screen.</p>
+
+<p>This is where wildcards come in use.</p>
+
+<p>For example:</p>
+
+<blockquote><p>ls some*</p></blockquote>
+
+<p>Will list all list all files in the current directory beginning with ‘some’ e.g. someText or moreText.</p>
+
+<blockquote><p>find . -name “some*” -print</p></blockquote>
+
+<p>Again, we can combine this with some redirection to save a search to a document. Par exemple, we can use the tilde (~) using ALT + N to go to our movies directory using > cd ~/Movies and then search for our .mkv movies and save them to a file.</p>
+
+<blockquote><p>cd ~/Movies</p>
+
+<p>find . -name “*.mkv” -print > myMovies.txt</p></blockquote>
+
+<p>We can also have a peek inside files and search for particular files using Grep:</p>
+
+<p>Globally Search a Regular Expression and Print</p>
+
+<blockquote><p>grep wally whereswally.txt</p></blockquote>
+
+<p>OR</p>
+
+<blockquote><p>grep wally *.txt</p></blockquote>
+
+<p>Regular expressions (REGEX)</p>
+
+<p>Regular expressions really are fantastic things. They are immensely powerful for defining very specifically what you are looking for from a string. From my knowledge, they maintain a very similar syntax throughout most programming languages. They are hard to remember to begin with but once you know them, you know them.</p>
+
+<p>Here’s a good website to try them out: <a href="http://www.regexr.com.">http://www.regexr.com.</a></p>
+
+<p>One line crash course:</p>
+
+<p>\w \d \s (word, digit, whitespace)</p>
+
+<p>Grep plays nicely with regular expressions. The following will find any .txt files in the current directory and then send them to grep. Grep will then analyse them to see if they contain any words.</p>
+
+<blockquote><p>find . -name “*.txt” -print | grep \w</p></blockquote>
+
+<p>Counting words</p>
+
+<p>This has quite a self-explanatory syntax: wc. You can count the number of words in any file by typing the following:</p>
+
+<blockquote><p>wc someText</p></blockquote>
+
+<p> 9     492    3004 longText</p>
+
+<p>These are the line, word and character counts for the someText file.</p>
+
+<p>We can use redirection in a similar way and combine this with find &amp; grep:</p>
+
+<blockquote><p>find . -name “.txt” -print | grep wally | wc</p></blockquote>
+
+<p>This will show us the number of Wally’s found.</p>
+
+<p>Parameters: -c (show bytes), -l (show lines), -m (show characters), -w (show words)</p>
+
+<p>PERMISSIONS</p>
+
+<blockquote><p>whoami</p></blockquote>
+
+<p>There are three main types of classes: “user”, “group” and “other”. There can only be one owner of any one file - the user. Sometimes, groups of users exist to define a class of users. The other class is reserved for those that don’t fall into the user or group class.</p>
+
+<p> There are three main types of permissions: “read”, “write” and “execute”. If we have a look at a directory using:</p>
+
+<blockquote><p>ls -l</p></blockquote>
+
+<p>We can view the read / write permissions:</p>
+
+<p>image</p>
+
+<p>The first hyphen here tells us that these are all files. If not, it would say “d” - “d” for directory. Then it begins to tell us the read / write / execute status for the user, group and other. The user comes first. It says that the user has read, write capabilities. The hyphen after the w indicates that there is not an execute option. This gives us “rw-“.</p>
+
+<p>After this we have the group permissions. In the same structure as was defined for the user, we have “r—”. Meaning that the group has read permissions but not write and execute capabilities.</p>
+
+<p>Finally, we have other. We can see that other only has read permissions in the same way as the group.</p>
+
+<p>Changing permissions - change mode</p>
+
+<p>If we want to change permissions, chmod is our friend. Chmod stands for change mode.</p>
+
+<blockquote><p>chmod u+r someText</p></blockquote>
+
+<p>Chmod enables us to change the read, write and execute permissions for the user, group and other (all). As above, u stands for user, but this can be interchanged with g(roup) or a(ll). We use + or - minus to indicate what we are adding. As before, we then specify the permissions we wish to change. Above we have changed this to read. Lastly, we specify which file we wish to change: someText.</p>
+
+<p>Shebang</p>
+
+<p>The shebang is a combination of a hash # and an exclamation mark !. It enables us to specify which interpreter we are going to use in a script. This is especially useful if you want to run a script on the command line without specifying what to use.</p>
+
+<p>For example, if we put #! /path/to/ruby at the top of an hello.rb script the console will know that this is a ruby script.</p>
+
+<p>We need to use chmod after this to specify that hello.rb is exectuable.</p>
+
+<blockquote><p>chmod u+x hello.rb</p></blockquote>
+
+<p>Now we can run ./hello.rb on the command line and it will run the script.</p>
+
+<p>Note: to make the code run on other systems, it would be wise to change the hello.rb script to: #! /usr/bin/env ruby</p>
+
+<p>A lot of programs use the shebang in order to specify the interpreter to use. For example, irb uses it:</p>
+
+<blockquote><p>head “which irb”</p></blockquote>
+
+<p>You can see at the top of the script that irb is using a shebang to specify the interpreter to use.</p>
+
+<p>Environment variables</p>
+
+<p>If you want to have a look at what at the environment you are working with on the command line try > env. It will display everything to the screen that your environment is currently working with.</p>
+
+<p>Echo</p>
+
+<blockquote><p>echo $HOME</p></blockquote>
+
+<p>Super useful for telling you your home directory.</p>
+
+<p>And</p>
+
+<blockquote><p>echo “Hello world!” > hello.txt</p></blockquote>
+
+<p>PATH</p>
+
+<p>Path stores the location of paths to your programs and files. Everything that runs on the command line, without you specifying its location, will have a path pre-designated. For example, if you run “ruby” then the computer will search for the PATH locations until it finds the correct file to run. We can see this in action if we run the following:</p>
+
+<blockquote><p>echo $PATH ruby</p></blockquote>
+
+<p>We can create or modify our own PATHs using export:</p>
+
+<blockquote><p>export MA=/path/to/makersprecourse</p></blockquote>
+
+<p>I created a path for my Makers Precourse files. This means that I can access it by running:</p>
+
+<blockquote><p>cd $MA</p></blockquote>
+
+<p>More commonly, environment variables are used to store secret data. For example, say we had an API key for Twitter that we used in our application. We could save this using > export TWITTER_API_KEY=[enterkey].</p>
+
+<p>We could then read this in our ruby script using ENV[TWITTER_API_KEY].</p>
+
+<p>You could then upload to GitHub safe in the knowledge that no one could use your key.</p>
+
+<p>However, environment variables are only saved for the session that you are in.</p>
+
+<p>Navigate to your home directory.</p>
+
+<p>Use > ls -l to display hidden files. You should now see .bash_profile. This is where your terminal settings are stored. If we want to permanently add the environment variables we have set then we will have to save them here.</p>
+
+<blockquote><p>echo “export MA=/path/to/location” » ~/.bash_profile</p></blockquote>
+
+<p>Examine the bash file now and you should see the changes.</p>
+
+<p>VIM</p>
+
+<p>In the past I’ve ran a mile every time VIM cropped up and instead I used nano. But VIM is actually very easy to use once you know a few tricks.</p>
+
+<p>For a start, VIM has two main modes: command mode and edit mode.</p>
+
+<p>Let’s boot up vim:</p>
+
+<blockquote><p>vim newFile</p></blockquote>
+
+<p>To start with you will be in command mode. To switch to edit mode press “i” for insert. Then you can type and use two other commands to help you. “O” will enable you to get to the next line and “dd” will delete a line.</p>
+
+<p>Now press ESC.</p>
+
+<p>You are now back in command mode. Easy, huh?</p>
+
+<p>To save, type :w which stands for write. Alternatively, type :q to exit or :q! to exit without saving.</p>
+
+<p>And that’s a wrap.</p>
+
+<p>I’m kinda live blogging this so I’m going to go take a run and then come back and do my mind maps. I’ll be using the Paper app on the iPad for this purpose along with Tony Buzan’s Mind Mapping technique.</p>
+
+<p>Peace.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
 			<a href="/blog/2014/12/12/test/">
 			
 				Test</a>
