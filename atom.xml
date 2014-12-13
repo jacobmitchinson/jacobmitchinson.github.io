@@ -4,7 +4,7 @@
   <title><![CDATA[Jacob Mitchinson]]></title>
   <link href="http://jacobmitchinson.github.io/atom.xml" rel="self"/>
   <link href="http://jacobmitchinson.github.io/"/>
-  <updated>2014-12-13T10:44:29+00:00</updated>
+  <updated>2014-12-13T10:54:13+00:00</updated>
   <id>http://jacobmitchinson.github.io/</id>
   <author>
     <name><![CDATA[Jacob Mitchinson]]></name>
@@ -49,7 +49,7 @@
 
 <p>Finally, remember this: do not try and understand all of computer science all at once. No seriously, you could potentially spend hours trawling through Wikipedia to understand certain concepts but without understanding the basics you aren’t going to get anywhere. I learnt this the hard way.</p>
 
-<p>Making Life Easier</p>
+<h3>Making Life Easier</h3>
 
 <p>I consider myself to be quite a patient person, but I’ve also found that sometimes I’ve wanted to throw my computer out the window whilst doing some of these exercises. Seriously, I cannot express enough the importance of taking regular breaks whilst coding. I use the Pomodoro technique to help enforce this using a 50 minute work / 10 minute break cycle. Trust me, it’ll save you time and keep you fresh throughout the day. I like this iPhone app.</p>
 
@@ -59,11 +59,11 @@
 
 <p>I’m also an avid user of Pocket. It’ll help you get back to resources you use. Just remember to tag the things you like. I also use an IFTTT to send interesting articles to this Tumblr.</p>
 
-<p>Makers Week One</p>
+<h3>Makers Pre-course Week One</h3>
 
 <p>Below I have included my explanations for some useful commands that I learnt this week whilst doing the Makers pre-course week one. I like to explain the commands to myself in a concise format. I find that this aids my memory and understanding whilst also providing a handy reference for things I’ve learnt. Further, whilst the below is mostly made up of things I have learnt from the Makers resource, I often find that I use multiple resources to aid my understanding. When I want to look something up quickly, I don’t want to have to remember precisely where I found it.</p>
 
-<p>Command Line</p>
+<h5>Command Line</h5>
 
 <blockquote><p>rm -f</p></blockquote>
 
@@ -77,8 +77,7 @@
 
 <p>This concatenates a file which means that it combines files.</p>
 
-<pre><code> &gt; cat jenkins.txt
-</code></pre>
+<blockquote><p>cat jenkins.txt</p></blockquote>
 
 <p>Print the contents to the screen.</p>
 
@@ -114,7 +113,7 @@
 
 <p>RTFM</p>
 
-<p>Streams</p>
+<h4>Streams</h4>
 
 <p>Streams are channels that connect to inputs and outputs. Your keyboard is an input stream and your screen is an output stream. Usually there is an error stream.</p>
 
@@ -132,7 +131,7 @@
 
 <blockquote><p>cat someText anotherText > new</p></blockquote>
 
-<p>Finding and listing files</p>
+<h4>Finding and listing files</h4>
 
 <p>If you are only working with a few files then using > ls is quite handy. However, if you are working with 6,000 files then you are probably going to need to narrow down what you are listing on the screen.</p>
 
@@ -154,7 +153,7 @@
 
 <p>We can also have a peek inside files and search for particular files using Grep:</p>
 
-<p>Globally Search a Regular Expression and Print</p>
+<h4>Globally Search a Regular Expression and Print</h4>
 
 <blockquote><p>grep wally whereswally.txt</p></blockquote>
 
@@ -162,7 +161,7 @@
 
 <blockquote><p>grep wally *.txt</p></blockquote>
 
-<p>Regular expressions (REGEX)</p>
+<h4>Regular expressions (REGEX)</h4>
 
 <p>Regular expressions really are fantastic things. They are immensely powerful for defining very specifically what you are looking for from a string. From my knowledge, they maintain a very similar syntax throughout most programming languages. They are hard to remember to begin with but once you know them, you know them.</p>
 
@@ -176,7 +175,7 @@
 
 <blockquote><p>find . -name “*.txt” -print | grep \w</p></blockquote>
 
-<p>Counting words</p>
+<h4>Counting words</h4>
 
 <p>This has quite a self-explanatory syntax: wc. You can count the number of words in any file by typing the following:</p>
 
@@ -194,7 +193,7 @@
 
 <p>Parameters: -c (show bytes), -l (show lines), -m (show characters), -w (show words)</p>
 
-<p>PERMISSIONS</p>
+<h4>PERMISSIONS</h4>
 
 <blockquote><p>whoami</p></blockquote>
 
@@ -222,7 +221,7 @@
 
 <p>Chmod enables us to change the read, write and execute permissions for the user, group and other (all). As above, u stands for user, but this can be interchanged with g(roup) or a(ll). We use + or - minus to indicate what we are adding. As before, we then specify the permissions we wish to change. Above we have changed this to read. Lastly, we specify which file we wish to change: someText.</p>
 
-<p>Shebang</p>
+<h4>Shebang</h4>
 
 <p>The shebang is a combination of a hash # and an exclamation mark !. It enables us to specify which interpreter we are going to use in a script. This is especially useful if you want to run a script on the command line without specifying what to use.</p>
 
@@ -242,11 +241,11 @@
 
 <p>You can see at the top of the script that irb is using a shebang to specify the interpreter to use.</p>
 
-<p>Environment variables</p>
+<h4>Environment variables</h4>
 
 <p>If you want to have a look at what at the environment you are working with on the command line try > env. It will display everything to the screen that your environment is currently working with.</p>
 
-<p>Echo</p>
+<h4>Echo</h4>
 
 <blockquote><p>echo $HOME</p></blockquote>
 
@@ -256,7 +255,7 @@
 
 <blockquote><p>echo “Hello world!” > hello.txt</p></blockquote>
 
-<p>PATH</p>
+<h3> PATH</h3>
 
 <p>Path stores the location of paths to your programs and files. Everything that runs on the command line, without you specifying its location, will have a path pre-designated. For example, if you run “ruby” then the computer will search for the PATH locations until it finds the correct file to run. We can see this in action if we run the following:</p>
 
@@ -286,7 +285,7 @@
 
 <p>Examine the bash file now and you should see the changes.</p>
 
-<p>VIM</p>
+<h4>VIM</h4>
 
 <p>In the past I’ve ran a mile every time VIM cropped up and instead I used nano. But VIM is actually very easy to use once you know a few tricks.</p>
 
@@ -306,7 +305,7 @@
 
 <p>And that’s a wrap.</p>
 
-<p>I’m kinda live blogging this so I’m going to go take a run and then come back and do my mind maps. I’ll be using the Paper app on the iPad for this purpose along with Tony Buzan’s Mind Mapping technique.</p>
+<p>I&rsquo;ve done my MindMap below. I’ve used the Paper app on the iPad for this purpose along with Tony Buzan’s Mind Mapping technique.</p>
 
 <p>Peace.</p>
 ]]></content>
