@@ -4,7 +4,7 @@
   <title><![CDATA[Jacob Mitchinson]]></title>
   <link href="http://jacobmitchinson.github.io/atom.xml" rel="self"/>
   <link href="http://jacobmitchinson.github.io/"/>
-  <updated>2014-12-14T20:07:01+00:00</updated>
+  <updated>2014-12-14T20:13:38+00:00</updated>
   <id>http://jacobmitchinson.github.io/</id>
   <author>
     <name><![CDATA[Jacob Mitchinson]]></name>
@@ -17,12 +17,16 @@
     <link href="http://jacobmitchinson.github.io/blog/2014/12/14/makers-academy-pre-course-week-two/"/>
     <updated>2014-12-14T19:59:41+00:00</updated>
     <id>http://jacobmitchinson.github.io/blog/2014/12/14/makers-academy-pre-course-week-two</id>
-    <content type="html"><![CDATA[<p>Today started work on Git&hellip;</p>
+    <content type="html"><![CDATA[<p>Today started work on Git. Previouly, I&rsquo;ve got to say it&rsquo;s been a little bit frustrating dealing with Git. A lot of strange errors seem to pop up that are difficult to understand as a new comer. The basics are easy but doing more complex things such as going back several commits and merging is tough. The below has massively increased my understanding of Git. I can&rsquo;t say I&rsquo;ve had a point of enlightment with Git yet but maybe that will come later.</p>
+
+<p>My favourite resource by far has been <a href="http://gitimmersion.com/.">http://gitimmersion.com/.</a></p>
+
+<p>As previously stated I&rsquo;ve added my explanations for the git commands below. This is to better aid my own understanding but hopeuflly it will help others too.</p>
 
 <h4>Setting Global Settings</h4>
 
 <blockquote><p>git config —global user.name “Jacob Mitchinson&#8221;
-git config —global user.email “<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x65;&#x6d;&#97;&#x69;&#108;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#x65;&#109;&#x61;&#105;&#x6c;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a>&#8221;</p></blockquote>
+git config —global user.email “<a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x65;&#109;&#x61;&#x69;&#x6c;&#64;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#101;&#x6d;&#97;&#105;&#x6c;&#64;&#x67;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a>&#8221;</p></blockquote>
 
 <p>These two are immensely useful commands to change your name and email globally for git.</p>
 
