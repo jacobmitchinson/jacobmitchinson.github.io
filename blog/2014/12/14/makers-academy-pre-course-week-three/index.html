@@ -70,6 +70,43 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>gem install colorize</span></code></pre></td></tr></table></div></figure>
 
+
+<p>However, I wanted to implement my chatbot without having the end user having to install dependencies. I was able to do this by looking at the gem itself and taking the parts that I needed, and <a href="http://en.wikipedia.org/wiki/Monkey_patch">monkey patching</a> the string class:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">String</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">colour</span><span class="p">(</span><span class="n">color_code</span><span class="p">)</span>
+</span><span class='line'>    <span class="s2">&quot;</span><span class="se">\e</span><span class="s2">[</span><span class="si">#{</span><span class="n">color_code</span><span class="si">}</span><span class="s2">m</span><span class="si">#{</span><span class="nb">self</span><span class="si">}</span><span class="se">\e</span><span class="s2">[0m&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">red</span>
+</span><span class='line'>    <span class="n">colour</span><span class="p">(</span><span class="mi">31</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">green</span>
+</span><span class='line'>    <span class="n">colour</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 </div>
 	
 
