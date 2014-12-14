@@ -1,0 +1,313 @@
+
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<title>Maker’s Academy Pre-course Week Two  | Jacob Mitchinson</title>
+
+	<meta name="author" content="Jacob Mitchinson">
+
+<meta name="description" content="This tracks my coding journey."> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Jacob Mitchinson" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">Jacob Mitchinson</a></h1>
+<span class="tagline">A coding journey.</span>
+<nav id="main-nav"><ul>
+	<li><a href="/about">About</a></li>
+	<li><a href="/archives">Archives</a></li>
+	<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/about">About</a></li>
+	<li><a href="/archives">Archives</a></li>
+	<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<header>
+		<h2 class="title">Maker’s Academy Pre-course Week Two</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-14T19:59:41+00:00" pubdate data-updated="true"></time></div>
+	</header>
+	<div class="entry-content"><p>Today started work on Git… I had done some previous work blah blah blah</p>
+
+<h4>Setting Global Settings</h4>
+
+<blockquote><p>git config —global user.name “Jacob Mitchinson&#8221;
+git config —global user.email “<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x65;&#109;&#97;&#x69;&#108;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;">&#x65;&#x6d;&#x61;&#105;&#x6c;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a>&#8221;</p></blockquote>
+
+<p>These two are immensely useful commands to change your name and email globally for git.</p>
+
+<h4>Setting Line Ending Settings</h4>
+
+<blockquote><p>git config —global core.autoclrf input</p></blockquote>
+
+<p>Your computer uses invisible markers to denote line endings. This can be problematic as Windows and UNIX use different systems to show line endings. So when working on remote repos it’s a good idea to use one format. This line will convert Windows formatted line endings (CLRF) to Unix line endings (LF).</p>
+
+<blockquote><p>git config —global core.safeclrf true</p></blockquote>
+
+<p>From StackOverflow: this &lsquo;aborts the conversion of a file if checking out the file will result in a changed and possibly damaged file which would be the case if Notepad was the editor’. I’m not totally satisfied with this answer as I’m not sure how the file would become damaged as a result of the conversion.</p>
+
+<h4>Removal</h4>
+
+<blockquote><p>rm -rf .git</p></blockquote>
+
+<p>The -rf stands for ‘recursive’ (all folders) and the -f forces the removal.</p>
+
+<p>Also ensure to remove files from the staging area like so:</p>
+
+<blockquote><p>git rm file</p></blockquote>
+
+<p>This will remove the file itself and from staging in one go.</p>
+
+<h4>Viewing Your Commits</h4>
+
+<p>If you want to see the commits that have been added we can do so like so:</p>
+
+<blockquote><p>git log</p></blockquote>
+
+<p>This one is a nice one too:</p>
+
+<blockquote><p>git log —pretty=oneline</p></blockquote>
+
+<p>This shows your commits on a single line along with the corresponding hash.</p>
+
+<p>We can also use other options with —pretty=oneline to define things even further using —max-count, —since, —until, —author, and —all:</p>
+
+<blockquote><p>git log —pretty=oneline —max-count=3
+git log —pretty=oneline —since=’10 minutes ago’
+git log —pretty=oneline —until=‘5 minutes ago&#8217;
+git log —pretty=oneline —all</p></blockquote>
+
+<p>It was nice to see that when I googled some more info about —pretty=oneline that one of the former (?) teachers at MA, Alex Peattie, wrote an article about this. He also suggested that we could use —before instead of —until and —after instead of —since. I find that much more natural.</p>
+
+<p>I took a lot of this from Git Immersion. A nice command to use is this too:</p>
+
+<blockquote><p>git log —pretty=format:&lsquo;%h %ad | %s%d [%an]&rsquo; —graph —date=short</p></blockquote>
+
+<h4>ALIAS SETTINGS</h4>
+
+<p>Edit .gitconfig with the following settings to improve your git speed:</p>
+
+<p>[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch<br/>
+  hist = log &ndash;pretty=format:&lsquo;%h %ad | %s%d [%an]&rsquo; &ndash;graph &ndash;date=short
+ type = cat-file -t
+ dump = cat-file -p</p>
+
+<h4>Git Tag</h4>
+
+<p>Create tags:</p>
+
+<blockquote><p>git tag v1</p>
+
+<p>git checkout v1</p></blockquote>
+
+<p>You can now refer to versions by their names and not have to worry about the hash!</p>
+
+<p>View tags:</p>
+
+<blockquote><p>git tag</p></blockquote>
+
+<p>Checkout the tag history using the following:</p>
+
+<blockquote><p>git hist master —all</p></blockquote>
+
+<p>Going Back</p>
+
+<p>Remove Tag</p>
+
+<blockquote><p>git tag -d -all</p></blockquote>
+
+<h4>CLEAR THE STAGE</h4>
+
+<blockquote><p>git reset HEAD hello.rb</p></blockquote>
+
+<p>Removes staged items.</p>
+
+<p>Revert Changes in Working Directory</p>
+
+<p>To revert changes in the working directory for a file just checkout of the file:</p>
+
+<blockquote><p>git checkout hello_changed.rb</p></blockquote>
+
+<h4>Undo Commits</h4>
+
+<blockquote><p>git revert HEAD</p></blockquote>
+
+<h4>Reverts commits.</h4>
+
+<blockquote><p>git reset —hard (push hash / tag here)</p></blockquote>
+
+<p>Resets the branch to the specified commit.</p>
+
+<p>WARNING: Resetting can confuse those on a shared repo.</p>
+
+<p>Edit Commits</p>
+
+<p>Amends the last commit:</p>
+
+<blockquote><p>git commit —amend -m “amend&#8221;</p></blockquote>
+
+<h4>GIT MV</h4>
+
+<p>Move files with:</p>
+
+<blockquote><p>git mv from_here to_here</p></blockquote>
+
+<p>This is advantageous as git will then automatically at the file to the stage too.</p>
+
+<h4>Branches</h4>
+
+<p>Creating Branches</p>
+
+<blockquote><p>git checkout -b newbranch</p></blockquote>
+
+<p>Show Current Branch</p>
+
+<blockquote><p>git branch</p></blockquote>
+
+<p>SHOW REMOTE BRANCHES</p>
+
+<blockquote><p>git branch -a</p></blockquote>
+
+<h4> Merging</h4>
+
+<blockquote><p>git merge master</p></blockquote>
+
+<p>Fixing Conflict</p>
+
+<p>Edit conflicted files</p>
+
+<h4>REBASING</h4>
+
+<blockquote><p>git rebase master</p></blockquote>
+
+<p>The commit tree will get rewritten to show all of the changes from the branches.</p>
+
+<p>Merge should be used for public repos as rebase will confuse those working on the project.</p>
+
+<h4> REMOTE ADD</h4>
+
+<blockquote><p>git remote add shared ../hello.git</p></blockquote>
+
+<h4>CLONE</h4>
+
+<blockquote><p>git clone hello cloned_hello</p></blockquote>
+
+<p>Clone will help you to copy your repo into a new repo.</p>
+
+<h4>GIT REMOTE</h4>
+
+<p>Tells you the name of the repos home.</p>
+
+<blockquote><p>git remote show origin</p></blockquote>
+
+<p>Show you the location.</p>
+
+<h4>GIT FETCH</h4>
+
+<blockquote><p>git fetch</p></blockquote>
+
+<p>Fetch the change history. NOTE: will not commit. Using git merge origin/master will allow you to get the commits.</p>
+
+<p>GIT PULL</p>
+
+<p>FETCH AND MERGE</p>
+
+<h4> TRACK REMOTE BRANCH</h4>
+
+<blockquote><p>git branch —track greet origin/master</p></blockquote>
+
+<p>Tracks the greet branch in origin/master.</p>
+
+<h4>Bare Basics</h4>
+
+<blockquote><p>git clone —bare hello hello.git</p></blockquote>
+
+<p>Creates a clone of the hello repo with just the .git information.</p>
+</div>
+	
+
+</article>
+
+	
+	<div class="share">
+		<ul>
+			<li>
+  <a href="https://twitter.com/intent/tweet?text=Maker’s Academy Pre-course Week Two by @jakobtek&url=http://jacobmitchinson.github.io/blog/2014/12/14/makers-academy-pre-course-week-two/" title="Share Maker’s Academy Pre-course Week Two on Twitter">
+    <img src="/images/social/twitter.png" />
+  </a>
+</li>
+
+			<li>
+  <a href="https://www.facebook.com/sharer.php?u=http://jacobmitchinson.github.io/blog/2014/12/14/makers-academy-pre-course-week-two/" title="Share Maker’s Academy Pre-course Week Two on Facebook">
+    <img src="/images/social/facebook.png" />
+  </a>
+</li>
+
+			<li>
+  <a href="https://plus.google.com/share?url=http://jacobmitchinson.github.io/blog/2014/12/14/makers-academy-pre-course-week-two/" title="Share Maker’s Academy Pre-course Week Two on Google Plus">
+    <img src="/images/social/google.png" />
+  </a>
+</li>
+
+		</ul>
+	</div>
+
+
+
+</div>
+	<footer id="footer" class="inner">&copy; 2014
+
+    Jacob Mitchinson
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/hyphenator.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
