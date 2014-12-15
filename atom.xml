@@ -4,7 +4,7 @@
   <title><![CDATA[Jacob Mitchinson]]></title>
   <link href="http://jacobmitchinson.github.io/atom.xml" rel="self"/>
   <link href="http://jacobmitchinson.github.io/"/>
-  <updated>2014-12-15T11:09:33+00:00</updated>
+  <updated>2014-12-15T11:13:35+00:00</updated>
   <id>http://jacobmitchinson.github.io/</id>
   <author>
     <name><![CDATA[Jacob Mitchinson]]></name>
@@ -26,15 +26,34 @@
     <link href="http://jacobmitchinson.github.io/blog/2014/12/14/how-i-made-this-blog/"/>
     <updated>2014-12-14T21:20:23+00:00</updated>
     <id>http://jacobmitchinson.github.io/blog/2014/12/14/how-i-made-this-blog</id>
-    <content type="html"><![CDATA[<p>I wanted a clean and simple way of blogging and wanted to have a clear link between my blog and my github. I started using Tumblr to begin with but I wanted to be able to put code on the blog and have it format correctly which Tumblr didn&rsquo;t make easily possible.</p>
+    <content type="html"><![CDATA[<p>I wanted a clean and simple way of blogging and wanted to have a clear link between my blog and my GitHub. I started using Tumblr to begin with but I wanted to be able to put code on the blog and have it format correctly which Tumblr didn&rsquo;t make easily possible.</p>
 
 <p>I settled on Octopress which achieved my aims. I did the following steps:</p>
 
-<p>1.<a href="https://pages.github.com">GitHub Setup</a> to get your GitHub ready. Be careful and ensure that your repo is formatted as username.github.io. It will take a few minutes to install.
-2.<a href="http://octopress.org/docs/setup/">Octopress Install</a> to complete the setup.
-3.Finally, I selected and installed my theme, <a href="https://github.com/tlvince/leanpress">LeanPress</a>. Take a look at <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Octopress Themes</a> to select yours.</p>
+<ol>
+<li><p><a href="https://pages.github.com">GitHub Setup</a> to get your GitHub ready. Be careful and ensure that your repo is formatted as username.github.io. It will take a few minutes to install.</p></li>
+<li><p><a href="http://octopress.org/docs/setup/">Octopress Install</a> to complete the setup.</p></li>
+<li><p>Finally, I selected and installed my theme, <a href="https://github.com/tlvince/leanpress">LeanPress</a>. Take a look at <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Octopress Themes</a> to select yours.</p></li>
+<li><p>From there, locate yourself to your yourusername.github.io directory and run:</p></li>
+</ol>
 
-<p>I am also using the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code">markdown cheat sheet</a> to help me get to grips with markdown. I have to say I&rsquo;m starting to really favour it and it makes it much easier to be explicit about your formatting.</p>
+
+<blockquote><p>rake generate
+rake deploy</p></blockquote>
+
+<ol>
+<li>You can create new blogs by running:</li>
+</ol>
+
+
+<blockquote><p>rake new_post[&ldquo;Title&rdquo;]</p></blockquote>
+
+<p>Edit them in source/_posts and then deploy again to upload to GitHub.</p>
+
+<ol>
+<li>I am also using the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code">markdown cheat sheet</a> to help me get to grips with markdown. I have to say I&rsquo;m starting to really favour it and it makes it much easier to be explicit about your formatting.</li>
+</ol>
+
 
 <p>In the future, I would like to design my own blog and not use a theme. For now, I have to focus on Ruby at Makers.</p>
 ]]></content>
@@ -106,7 +125,7 @@
 <h4>Setting Global Settings</h4>
 
 <blockquote><p>git config —global user.name “Jacob Mitchinson&#8221;
-git config —global user.email “<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x65;&#x6d;&#97;&#x69;&#x6c;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x65;&#109;&#x61;&#x69;&#x6c;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a>&#8221;</p></blockquote>
+git config —global user.email “<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#101;&#x6d;&#97;&#x69;&#x6c;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x65;&#109;&#x61;&#x69;&#108;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;</a>&#8221;</p></blockquote>
 
 <p>These two are immensely useful commands to change your name and email globally for git.</p>
 

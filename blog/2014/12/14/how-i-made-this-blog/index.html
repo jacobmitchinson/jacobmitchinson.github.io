@@ -63,15 +63,34 @@
 
 <time datetime="2014-12-14T21:20:23+00:00" pubdate data-updated="true"></time></div>
 	</header>
-	<div class="entry-content"><p>I wanted a clean and simple way of blogging and wanted to have a clear link between my blog and my github. I started using Tumblr to begin with but I wanted to be able to put code on the blog and have it format correctly which Tumblr didn&rsquo;t make easily possible.</p>
+	<div class="entry-content"><p>I wanted a clean and simple way of blogging and wanted to have a clear link between my blog and my GitHub. I started using Tumblr to begin with but I wanted to be able to put code on the blog and have it format correctly which Tumblr didn&rsquo;t make easily possible.</p>
 
 <p>I settled on Octopress which achieved my aims. I did the following steps:</p>
 
-<p>1.<a href="https://pages.github.com">GitHub Setup</a> to get your GitHub ready. Be careful and ensure that your repo is formatted as username.github.io. It will take a few minutes to install.
-2.<a href="http://octopress.org/docs/setup/">Octopress Install</a> to complete the setup.
-3.Finally, I selected and installed my theme, <a href="https://github.com/tlvince/leanpress">LeanPress</a>. Take a look at <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Octopress Themes</a> to select yours.</p>
+<ol>
+<li><p><a href="https://pages.github.com">GitHub Setup</a> to get your GitHub ready. Be careful and ensure that your repo is formatted as username.github.io. It will take a few minutes to install.</p></li>
+<li><p><a href="http://octopress.org/docs/setup/">Octopress Install</a> to complete the setup.</p></li>
+<li><p>Finally, I selected and installed my theme, <a href="https://github.com/tlvince/leanpress">LeanPress</a>. Take a look at <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Octopress Themes</a> to select yours.</p></li>
+<li><p>From there, locate yourself to your yourusername.github.io directory and run:</p></li>
+</ol>
 
-<p>I am also using the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code">markdown cheat sheet</a> to help me get to grips with markdown. I have to say I&rsquo;m starting to really favour it and it makes it much easier to be explicit about your formatting.</p>
+
+<blockquote><p>rake generate
+rake deploy</p></blockquote>
+
+<ol>
+<li>You can create new blogs by running:</li>
+</ol>
+
+
+<blockquote><p>rake new_post[&ldquo;Title&rdquo;]</p></blockquote>
+
+<p>Edit them in source/_posts and then deploy again to upload to GitHub.</p>
+
+<ol>
+<li>I am also using the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code">markdown cheat sheet</a> to help me get to grips with markdown. I have to say I&rsquo;m starting to really favour it and it makes it much easier to be explicit about your formatting.</li>
+</ol>
+
 
 <p>In the future, I would like to design my own blog and not use a theme. For now, I have to focus on Ruby at Makers.</p>
 </div>
